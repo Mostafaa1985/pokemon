@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/script.js" defer> </script>
+    <script src="https://kit.fontawesome.com/18c32dd186.js" crossorigin="anonymous"></script>
+
+    <title>SearchBox</title>
+</head>
+
+<body>
+    <!-- searc  557h bar -->
+    <div class="container">
+        <div class="search-wrapper">
+            <div class="search-input">
+                <label for="search" data-label>Pokedex</label>
+                <input type="text" id="search" data-search placeholder="search">
+                <div class="autocom-box"></div>
+                <div class="icon"><i class="fas fa-search "></i></div>
+            </div>
+            <button class="suggestions">!</button>
+            <div class="hint-wrapper">
+                <p class="help">You can search between following names!</p>
+            </div>
+        </div>
+
+        <!-- pokemon box -->
+        <div class="pokemon" data-pokemon-cards-container></div>
+    </div>
+
+    <!-- template -->
+    <template data-user-template>
+        <div class="pokemon-cards">
+            <div data-header-wrapper>
+                <header data-header></header>
+                <div id="close">X</div>
+            </div>
+            <img src="" alt="" data-img />
+            <div data-type-wrapper>
+                <div data-type-head>types: </div>
+                <div data-type-body></div>
+            </div>
+            <div data-weight></div>
+            <div data-height></div>
+            <div data-abilities></div>
+        </div>
+    </template>
+
+
+</body>
+
+</html>
